@@ -31,9 +31,6 @@ public class ProductRepository {
     }
 
     public void remove(int id){
-//        for (Product p: productList) {
-//            if(id == p.getId()) productList.remove(p);
-//        }
         productList.removeIf(b -> b.getId() == id);
     }
 }
